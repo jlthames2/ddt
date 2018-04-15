@@ -1,0 +1,100 @@
+SERVER:
+Listen on port: 84
+RECVD FROM: ('10.1.2.205', 36071)
+Listen on port: 89
+RECVD FROM: ('10.1.2.205', 45891)
+Listen on port: 81
+RECVD FROM: ('10.1.2.205', 56866)
+Listen on port: 85
+RECVD FROM: ('10.1.2.205', 45271)
+Listen on port: 83
+RECVD FROM: ('10.1.2.205', 49907)
+Listen on port: 88
+RECVD FROM: ('10.1.2.205', 43876)
+Listen on port: 86
+RECVD FROM: ('10.1.2.205', 35804)
+Listen on port: 88
+RECVD FROM: ('10.1.2.205', 43882)
+Listen on port: 87
+RECVD FROM: ('10.1.2.205', 42071)
+Listen on port: 86
+RECVD FROM: ('10.1.2.205', 35816)
+Listen on port: 86
+RECVD FROM: ('10.1.2.205', 35817)
+Listen on port: 82
+
+
+CLIENT:
+root@hackbox:~# for i in $(seq 1 10); do nmap -v -p 80-90 -A 10.1.2.205 | egrep "/tcp open|WARN"; done
+WARNING: RST from 10.1.2.205 port 84 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 84 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 84 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 84 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 84 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 84 -- is this port really open?
+84/tcp open   ctf?
+WARNING: RST from 10.1.2.205 port 89 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 89 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 89 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 89 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 89 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 89 -- is this port really open?
+NSOCK ERROR [4.6540s] mksock_bind_addr(): Bind to 0.0.0.0:111 failed (IOD #9): Address already in use (98)
+89/tcp open   su-mit-tg?
+WARNING: RST from 10.1.2.205 port 81 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 81 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 81 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 81 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 81 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 81 -- is this port really open?
+81/tcp open   hosts2-ns?
+WARNING: RST from 10.1.2.205 port 85 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 85 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 85 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 85 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 85 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 85 -- is this port really open?
+85/tcp open   mit-ml-dev?
+WARNING: RST from 10.1.2.205 port 83 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 83 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 83 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 83 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 83 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 83 -- is this port really open?
+83/tcp open   mit-ml-dev?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+88/tcp open   kerberos-sec?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+NSOCK ERROR [4.6540s] mksock_bind_addr(): Bind to 0.0.0.0:143 failed (IOD #9): Address already in use (98)
+86/tcp open   mfcobol?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 88 -- is this port really open?
+88/tcp open   kerberos-sec?
+WARNING: RST from 10.1.2.205 port 87 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 87 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 87 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 87 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 87 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 87 -- is this port really open?
+87/tcp open   priv-term-l?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+WARNING: RST from 10.1.2.205 port 86 -- is this port really open?
+86/tcp open   mfcobol?

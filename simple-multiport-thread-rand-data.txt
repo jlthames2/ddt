@@ -1,0 +1,36 @@
+SERVER:
+root@hackbox:~/ics-code# python simple-multiport-rand.py
+Starting @ port: 8019
+Starting @ port: 8625
+Starting @ port: 8242
+Starting @ port: 8193
+Starting @ port: 8613
+Starting @ port: 8377
+Starting @ port: 8045
+Starting @ port: 8202
+Starting @ port: 8355
+Starting @ port: 8324
+Server @ Thread-11 handling client ('10.1.2.205', 52965) request
+Starting @ port: 8122
+Starting @ port: 8175
+Starting @ port: 8753
+Starting @ port: 8236
+Starting @ port: 8407
+Starting @ port: 8594
+Starting @ port: 8416
+Starting @ port: 8618
+Starting @ port: 8522
+Starting @ port: 8374
+
+
+CLIENT:
+root@hackbox:~# telnet 10.1.2.205 8324
+Trying 10.1.2.205...
+Connected to 10.1.2.205.
+Escape character is '^]'.
+HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2017 19:47:29 GMT
+Expires: -1
+Content-Type: text/html; charset=ISO-8859-1
+
+Connection closed by foreign host.
